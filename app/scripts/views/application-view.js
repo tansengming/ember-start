@@ -1,3 +1,3 @@
-Ember-Start.ApplicationView = Ember.View.extend({
-  templateName: 'application'
-});
+// Ember-Start.ApplicationView = Ember.View.extend({
+//   templateName: 'application'
+// });

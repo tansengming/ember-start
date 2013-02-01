@@ -1,3 +1,1 @@
-
-
-var Ember-Start = Ember.Application.create();
+var App = Ember.Application.create();

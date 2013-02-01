@@ -1,4 +1,4 @@
-Ember-Start.ApplicationController = Ember.ObjectController.extend({
-  // Implement your controller here.
-});
+// Ember-Start.ApplicationController = Ember.ObjectController.extend({
+//   // Implement your controller here.
+// });
 
