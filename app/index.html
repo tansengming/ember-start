@@ -26,6 +26,26 @@
       <div>
         {{ partial 'tableMenu' }}
       </div>
+      <div>
+        {{ outlet }}
+      </div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name='table'>
+      <h2>{{ id }}</h2>
+      <div>
+        {{ render 'food' }}
+      </div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name='food'>
+      <ul>
+        {{#each food in controller}}
+        <li>
+          {{ food.name }}
+        </li>
+        {{/each}}
+      </ul>
     </script>
 
     <script type="text/x-handlebars" data-template-name='_tableMenu'>
