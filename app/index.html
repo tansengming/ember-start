@@ -40,9 +40,10 @@
 
     <script type="text/x-handlebars" data-template-name='food'>
       <ul>
-        {{#each food in controller}}
+        {{#each controller}}
         <li>
-          {{ food.name }}
+          <img {{ bindAttr src='imageUrl' }}>
+          {{ name }}
         </li>
         {{/each}}
       </ul>
