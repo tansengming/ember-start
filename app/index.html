@@ -9,13 +9,19 @@
       <title></title>
       <meta name="description" content=""/>
       <meta name="viewport" content="width=device-width"/>
+      <link rel="stylesheet" href="styles/foundation.css">
       <link rel="stylesheet" href="styles/main.css"/>
 
   </head>
   <body>
     <script type="text/x-handlebars" data-template-name='application'>
-        <h1>Ordr</h1>
-        {{ outlet }}
+      <div class='row'>
+        <div class="twelve columns">
+          <h1>Ordr</h1>
+          <hr />
+          <p>{{ outlet }}</p>
+        </div>
+      </div>
     </script>
 
     <script type="text/x-handlebars" data-template-name='index'>
