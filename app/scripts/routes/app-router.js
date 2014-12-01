@@ -22,3 +22,4 @@ App.TablesRoute = Ember.Route.extend({
 
 App.TablesController = Ember.ArrayController.extend();
 App.FoodController = Ember.ArrayController.extend();
+App.TabController = Ember.ObjectController.extend();
