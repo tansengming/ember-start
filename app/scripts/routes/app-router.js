@@ -21,5 +21,18 @@ App.TablesRoute = Ember.Route.extend({
 
 
 App.TablesController = Ember.ArrayController.extend();
-App.FoodController = Ember.ArrayController.extend();
+App.FoodController = Ember.ArrayController.extend({
+  addFood: function(food) {
+    var table = this.controllerFor('table'),
+        tabItems = table.get('tab.tabItems');
+    tabItems.createRecord({
+      food: food
+    })
+
+  }
+});
 App.TabController = Ember.ObjectController.extend();
+
+Ember.Handlebars.registerBoundHelper('money', function(){
+  return '13.11';
+});
