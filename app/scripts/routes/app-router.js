@@ -11,6 +11,7 @@ App.ApplicationRoute = Ember.Route.extend({
 });
 
 App.TablesRoute = Ember.Route.extend({
+  // I assume that tablesController calls this function at some point
   model: function() {
     return App.Table.find();
   }

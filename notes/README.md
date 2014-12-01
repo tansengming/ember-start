@@ -9,6 +9,7 @@
   - `App.Table.find().objectAt(3).get('tab').get('tabItems').objectAt(2).get('cents')`
 - ![](naming-conventions.png)
 - ![](debugging.png)
+- If your views are nested, your routes should be nested
 
 ## Controllers
 
@@ -21,3 +22,4 @@
 ## Views
 
 - `{{ outlet }}` == yield in Ruby
+- linkTo will add `active` to clicked links
