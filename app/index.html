@@ -11,6 +11,7 @@
       <meta name="viewport" content="width=device-width"/>
       <link rel="stylesheet" href="styles/foundation.css">
       <link rel="stylesheet" href="styles/main.css"/>
+      <link rel="stylesheet" href="styles/app.css"/>
 
   </head>
   <body>
@@ -58,8 +59,8 @@
 
     <script type="text/x-handlebars" data-template-name='_tableMenu'>
       <h2>Tables</h2>
-      {{#each table in controller}}
-        {{#linkTo 'table' table}}{{ table.id }}{{/linkTo}}
+      {{#each table in controller}}<!-- really calling TablesController -->
+        {{#linkTo 'table' table class='panel six columns'}}{{ table.id }}{{/linkTo}}
       {{/each}}
     </script>
     <!-- build:js scripts/scripts.js -->
