@@ -13,11 +13,13 @@
 
 ## Controllers
 
+- this is where you'll be writing most of your code
 - controllers are the proxy access to the data model
 - controllers
   - on `Ember.Controller`, views just call the controller
   - `Ember.ObjectController`, views call controller.model
   - `Ember.ArrayController`, controller is an array, so you can do `{{#each controller}}`
+- master, detail
 
 ## Views
 
