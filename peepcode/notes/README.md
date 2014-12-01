@@ -19,9 +19,13 @@
   - on `Ember.Controller`, views just call the controller
   - `Ember.ObjectController`, views call controller.model
   - `Ember.ArrayController`, controller is an array, so you can do `{{#each controller}}`
+  - ![](arraycontroller.png)
+  - ![](objectcontroller.png)
+  - ![](controller.png)
 - master, detail
 
 ## Views
 
 - `{{ outlet }}` == yield in Ruby
 - linkTo will add `active` to clicked links
+- ![](partial-render.png)
