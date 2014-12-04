@@ -15,3 +15,4 @@ test 'visiting /tables', ->
     andThen ->
       equal currentPath(), 'tables'
       equal find('#subtitle').text(), 'Tables'
+      equal find('.table').length, 6
