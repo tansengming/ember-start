@@ -15,5 +15,6 @@ test('redirect on initial page', function() {
   visit('/');
   andThen(function() {
     equal(currentPath(), 'tables');
+    equal(find('h2#title').text(), 'Ordr');
   });
 });
