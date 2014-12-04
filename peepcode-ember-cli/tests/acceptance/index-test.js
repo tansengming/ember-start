@@ -1,17 +1,18 @@
-import startApp from '../helpers/start-app';
 import Ember from 'ember';
+import startApp from '../helpers/start-app';
+
 var App;
 
-module('Integration - Index Redirect', {
+module('Acceptance: Index', {
   setup: function() {
     App = startApp();
   },
   teardown: function() {
-    App.reset();
+    Ember.run(App, 'destroy');
   }
 });
 
-test('redirect on initial page', function() {
+test('index', function() {
   visit('/');
   andThen(function() {
     equal(currentPath(), 'tables');
