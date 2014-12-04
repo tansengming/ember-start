@@ -7,13 +7,13 @@ module('Integration - Index Redirect', {
     App = startApp();
   },
   teardown: function() {
-    Ember.run(App, 'destroy');
+    App.reset();
   }
 });
 
 test('redirect on initial page', function() {
-  // visit('/');
-  // andThen(function() {
-  //   equal(find('.somethign').lenght, 0);
-  // });
+  visit('/');
+  andThen(function() {
+    equal(currentPath(), 'tables');
+  });
 });
