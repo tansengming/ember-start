@@ -22,3 +22,4 @@ test 'visiting a tab', ->
     click '.table-link'
     andThen ->
       equal currentPath(), 'tables.table'
+      equal find('.table-name').text(), 'Table 6'
