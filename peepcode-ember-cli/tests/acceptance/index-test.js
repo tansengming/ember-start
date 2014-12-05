@@ -15,7 +15,7 @@ module('Acceptance: Index', {
 test('index', function() {
   visit('/');
   andThen(function() {
-    equal(currentPath(), 'tables');
+    equal(currentPath(), 'tables.index');
     equal(find('h2#title').text(), 'Ordr');
   });
 });

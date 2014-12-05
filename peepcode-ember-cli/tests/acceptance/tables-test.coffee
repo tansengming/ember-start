@@ -13,6 +13,12 @@ module 'Acceptance: Tables', {
 test 'visiting /tables', ->
     visit '/tables'
     andThen ->
-      equal currentPath(), 'tables'
+      equal currentPath(), 'tables.index'
       equal find('#subtitle').text(), 'Tables'
       equal find('.table').length, 6
+
+test 'visiting a tab', ->
+    visit '/tables'
+    click '.table-link'
+    andThen ->
+      equal currentPath(), 'tables.table'

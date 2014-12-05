@@ -2,7 +2,7 @@
 
 <ul>
   {{#each controller}}
-    <li class='table'>{{id}}</li>
+    <li class='table'>{{#link-to 'table' this class='table-link'}} {{ id }} {{/link-to}}</li>
   {{/each}}
 </ul>
 
