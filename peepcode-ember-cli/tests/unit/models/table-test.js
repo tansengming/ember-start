@@ -5,11 +5,17 @@ import {
 
 moduleForModel('table', 'Table', {
   // Specify the other units that are required for this test.
-  needs: []
+  // needs: []
 });
 
 test('it exists', function() {
   var model = this.subject();
-  // var store = this.store();
   ok(!!model);
+});
+
+test('it has data', function() {
+  var store = this.store();
+  var all = store.find('table');
+
+  return all.then(function() { equal(all.get('length'), 6); });
 });
