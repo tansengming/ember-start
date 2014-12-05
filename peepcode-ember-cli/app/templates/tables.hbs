@@ -1,9 +1,9 @@
 <h2 id='subtitle'>Tables</h2>
 
-<li>
-  {{#each table in controller}}
-    <ul class='table'></ul>
+<ul>
+  {{#each controller}}
+    <li class='table'>{{id}}</li>
   {{/each}}
-</li>
+</ul>
 
 {{outlet}}
