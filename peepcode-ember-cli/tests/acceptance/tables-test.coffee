@@ -17,9 +17,9 @@ test 'visiting /tables', ->
       equal find('#subtitle').text(), 'Tables'
       equal find('.table').length, 6
 
-test 'visiting a tab', ->
+test 'visiting a table', ->
     visit '/tables'
-    click '.table-link'
+    click '.table-link:first'
     andThen ->
       equal currentPath(), 'tables.table'
-      equal find('.table-name').text(), 'Table 6'
+      equal find('.table-name').text(), 'Table 1'
