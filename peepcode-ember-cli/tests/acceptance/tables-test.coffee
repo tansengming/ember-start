@@ -25,3 +25,4 @@ test 'visiting a table', ->
       equal find('.table-name').text(), 'Table 1'
       equal find('.tab').length, 1
       equal find('.tab-item').length, 2
+      equal find('.tab-item:first p').text(), 'Pizza'

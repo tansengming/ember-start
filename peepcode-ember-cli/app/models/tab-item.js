@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 var tabItem = DS.Model.extend({
-  
+  food: DS.belongsTo('Food', {async: true})  
 });
 
 tabItem.reopenClass({
