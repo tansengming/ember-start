@@ -1,16 +1,16 @@
-`import { moduleForModel, test } from 'ember-qunit';`
+`import { moduleForModel, test } from 'ember-qunit'`
+`import Tab from '../../../models/tab'`
 
 moduleForModel 'table', 'Table', {
-  # Specify the other units that are required for this test.
-  # needs: []
+  needs: ['model:tab']
 }
 
 test 'it exists', ->
-  model = this.subject()
-  ok(!!model)
+  model = @subject()
+  ok !!model
 
 test 'it has data', ->
-  store = this.store();
+  store = @store();
   all = store.find('table');
 
   all.then ->
