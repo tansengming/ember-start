@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 var Table = DS.Model.extend({
-  tab: DS.attr()
+  tab: DS.belongsTo('Tab', {async: true})
 });
 
 Table.reopenClass({
