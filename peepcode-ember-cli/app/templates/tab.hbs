@@ -1,3 +1,9 @@
-<h3 class='tab-name'>Tab {{id}}</h3>
+<div class='tab'>
+  <ul>
+    {{#each tabItems}}
+      <li class='tab-item'>{{id}}</li>
+    {{/each}}
+  <ul>
+</div>
 
 {{outlet}}

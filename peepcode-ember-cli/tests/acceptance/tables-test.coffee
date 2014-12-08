@@ -23,4 +23,5 @@ test 'visiting a table', ->
     andThen ->
       equal currentPath(), 'tables.table'
       equal find('.table-name').text(), 'Table 1'
-      equal find('.tab-name').text(), 'Tab 1'
+      equal find('.tab').length, 1
+      equal find('.tab-item').length, 2
